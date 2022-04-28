@@ -97,7 +97,6 @@ async function run() {
       if(email === decodedEmail){
       const query={email: email};
       const cursor=  orderCollection.find(query);
-      console.log(query);
       const orders=await cursor.toArray();
       res.send(orders);
       }
