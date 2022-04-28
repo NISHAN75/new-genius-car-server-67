@@ -119,6 +119,9 @@ run();
 app.get("/", (req, res) => {
   res.send("Running Genius Server");
 });
+app.get('/hero', (req,res) =>{
+  res.send('arha bhhi eta hero ra dor')
+})
 
 app.listen(port, () => {
   console.log("listening our Port", port);
